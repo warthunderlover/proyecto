@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat';
+    background-color: #000;
+    color:#fff;
+    margin:0px;
+    padding:0px;
+}
+
+header {
+    position: sticky;
+    top:0px;
+    left: 0px;
+    z-index: 900;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*header:has(){
+
+}*/
+
+header h1 {
+    margin: 0px;
+    margin-left:1rem;
+    padding:0.5rem 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    display:flex;
+    flex-direction: column;
+    list-style: none;
+    margin:0px;
+    padding:0px;
+}
+
+header nav ul li a{
+    display: block;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: #ddd;
+    transition: background-color, 500ms;
+    border-bottom: 1px solid #bbb;
+}
+
+header nav ul li a:hover{
+    background-color: #eee;
+    color:#333
+}
+
+
+main {
+    background-color: #ddd;
+    color:#333;
+    padding:0;
+}
+
+main h2 {
+    margin:0.2px;
+}
+
+.hero-panel {
+    position:relative;
+    overflow: hidden;
+    background-color:#890c66;
+    height: 80vh;
+}
+
+.hero-panel img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-panel div {
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    top:50%;
+    left:50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    border-radius: 17px;
+    transform: translateX(-50%) translateY(-50%);
+}
+.hero-panel div a{
+    align-self: center;
+    display:inline-block;
+    padding:1rem 2rem;
+    background-color: #890c21;
+    color: #fff;
+    text-decoration: none;
+    margin: 0.5rem auto;
+    border-radius: 48px;
+}
+.hero-panel div.cuadrante4{
+    top:75%;
+    left:75%;
+}
+.hero-panel div.cuadrante2{
+    top:50%;
+    left:50%;
+}
+
+.Precios {
+    padding:0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    border: 1px solid #000;
+    width: 300px;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 13px;
+}
+.card img {
+    width:100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center center;
+}
+.card h3, .card p {
+    margin:0px;
+    padding:0.5rem;
+}
+.card p {
+    font-size: 0.8rem;
+}
+.card a{
+    display: block;
+    text-decoration: none;
+    padding: 0.75rem 0.5rem;
+    text-align: center;
+    background-color: #bb46d0;
+    color: #333;
+    font-weight: bold;
+}
+.card .precio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    top: 200px;
+    right:1rem;
+    background-color: rgb(208, 129, 232);
+    transform: translateY(-50%);
+    font-weight: bold;
+    box-shadow: 1px 1px 10px #b300ff7c;
+}
+
+.card.highlighted {
+    background-color: #4badd3;
+}
+
+.card.highlighted a {
+    background-color: #ff3cec9d;
+}
+
+.presentacion{
+    transition: background-color, 1s;
+}
+
+.presentacion:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.register{
+    transition: box-shadow, 500ms;
+}
+
+.register:hover{
+    box-shadow: 5px 5px 8px #890c21;
+}
+
+
+
+@media (min-width:720px){
+    body {
+        background-color: #ff3597;
+    }
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    footer{
+        background-color:#890c66 ;
+    }
+
+    header h1 {
+        padding:0px;
+        text-align: left;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        margin-right: 1rem;
+    }
+
+    header nav ul li a{
+        border:none;
+    }
+
+    .Precios {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .Precios .card:nth-child(1),
+    .Precios .card:nth-child(3){
+        transform: scale(0.8) translateY(10%);
+    }
+
+    .Precios .card:hover{
+        transform: scale(1.1);
+    }
+
+}
+@media (min-width:1025px){
+    body {
+        background-color: #651900;
+    }
+}
+
+
+.progress{
+    position: fixed;
+    top:0px;
+    left:0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+
+.overlay {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circulo{
+    position: absolute;
+    width: 64px;
+    height: 110px;
+    top: calc(50%-55px);
+    left: calc(50%-32px);
+    object-fit: cover;
+    border: solid 11px cyan;
+    border-radius: 80%;
+    animation: rotar 1.5s infinite;
+     
+}
+
+.neg_circulo{ 
+    position: fixed;
+    width: 64px;
+    height: 110px;
+    top: calc(50%-55px);
+    left: calc(50%-32px);
+    object-fit: cover;
+    border: solid 7px white;
+    border-radius: 80%;
+    animation: rotar 950ms infinite;  
+    animation-delay: 400ms;
+    animation-direction: reverse; 
+}
+
+.neg_circulo_{ 
+    position: fixed;
+    width: 64px;
+    height: 110px;
+    top: calc(50%-55px);
+    left: calc(50%-32px);
+    object-fit: cover;
+    border: solid 10px blue;
+    border-radius: 80%;
+    animation: rotar 1.5s infinite ;
+    animation-delay: 300ms;   
+}
+
+.punto{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: solid 10px #df69f4;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+}
+
+@keyframes rotar {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(36deg);
+    }
+    20% {
+        transform: rotate(72deg);
+    }
+    30% {
+        transform: rotate(108deg);
+    }
+    40% {
+        transform: rotate(144deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    60% {
+        transform: rotate(216deg);
+    }
+    70% {
+        transform: rotate(252deg);
+    }
+    80% {
+        transform: rotate(288deg);
+    }
+    90% {
+        transform: rotate(324deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+

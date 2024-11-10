@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="min-width=device-width, initial-scale=1" name="viewport">
+        <title>Formularios</title>
+    </head>
+    <body>
+        <h1>Formualarios HTML</h1>
+        <form action="forms.html" method="get"><!--convertir una estructura de datos
+                serializar-->
+                
+            <label for="txtnombre">Nombre:</label>    
+            <input id="txtnombre" name="txtnombre" type="text" placeholder="Nombre completo">
+            
+            <br>
+            <br>
+
+            <label for="txtEmail">Correo:</label>    
+            <input id="txtEmail" name="txtEmail" type="text" placeholder="Correo">
+            
+            <br>
+            <br>
+            
+            <label>Ciudad</label>
+            
+            <br>
+            <br>
+            
+            <label for="optTegu">Tegucigalpa</label>
+            <input type="radio" id="optTegu" name="optciu" value="TEG">
+            
+            <br>
+            
+            <label for="optsSPS">San pedro</label>
+            <input type="radio" id="optsps" name="optciu" value="SPS">
+            
+            <br>
+            
+            <label for="optCholu">Choluteca</label>
+            <input type="radio" id="optCholu" name="optciu" value="Cholu">
+            
+            <br>
+            <br>
+
+            <label for="miComboBox">Selecciona tu Ciudad</label>
+            
+            <select id="miComboBox" name="cmbCiudad">
+                <option value="TEG">Tegucigalpa</option>
+                <option value="SPS">San Pedro</option>
+                <option value="Cholu">Choluteca</option>
+                <option value="LCB">La ceiba</option>
+                <option value="Tela">Tela</option>
+                <option value="coma">Comayaguela</option>
+                <option value="olanch">Olanchito</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="txtlongtext">Texto largo</label><br>
+            
+            <textarea id="txtlongtext" name="txtbio" placeholder="Texto muy largo"></textarea>
+
+            <br>
+            <br>
+
+            <button type="submit" name="btnenviar">Submit</button>            
+            
+            <br>
+            <br>
+
+        </form>
+
+        <button type="button">ir al otro sitio</button>
+        </a>
+    </body>
+</html>

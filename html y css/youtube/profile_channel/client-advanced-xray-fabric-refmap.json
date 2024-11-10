@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "pro/mikey/fabric/xray/mixins/MixinBlockItem": {
+      "place": "Lnet/minecraft/class_1747;method_7712(Lnet/minecraft/class_1750;)Lnet/minecraft/class_1269;"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "pro/mikey/fabric/xray/mixins/MixinBlockItem": {
+        "place": "Lnet/minecraft/class_1747;method_7712(Lnet/minecraft/class_1750;)Lnet/minecraft/class_1269;"
+      }
+    }
+  }
+}

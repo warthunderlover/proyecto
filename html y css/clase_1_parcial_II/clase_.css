@@ -1,0 +1,166 @@
+
+*{
+    box-sizing: border-box;
+
+}
+
+a{
+    color:white;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    margin-left: 1rem;
+}
+
+header nav ul li a{
+    display: block;
+    padding: 0.75rem 1rem;    
+    text-decoration: none;
+    color: #333;
+    transition: background-color 1000ms, ease 650ms;
+}
+
+header nav ul li:hover{
+    background-color: rgb(76, 225, 225);
+    color: rgb(239, 237, 237);
+}
+
+header{
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: grey;
+
+}
+
+header h1{
+    margin: 0.5rem 1rem;
+}
+
+main{
+    color: #ddd;
+}
+
+body{
+    background-color: #000;
+    color: #fff;
+}
+
+body aside nav ul li{
+    line-height: 2.0;
+}
+
+h1{
+    display: block;
+    padding: 0.75rem 1rem;    
+    text-decoration: none;
+    color: #333;
+    transition: background-color 650ms, ease 650ms;
+}
+
+h1:hover{
+    background-color: rgb(76, 225, 225);
+    color: rgb(239, 237, 237);
+    cursor: pointer;
+}
+
+.seccion{
+    text-decoration: underline;
+    transition: color 650ms, ease 650ms;
+}
+
+.seccion:hover{
+    color: cyan;
+}
+
+.imagen{
+    overflow: hidden;
+    background-color: #c221ad;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.wolverine{
+    position:center;
+    background-color: #c221ad;
+    
+}
+
+.wolverine:hover{
+    filter: drop-shadow(
+        5px 10px 10px rgb(89, 87, 87)
+    );
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    padding:1rem 2rem;
+    border-radius: 27px;
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+div a{
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 2px solid #333;
+    background-color: #333;
+    text-decoration: none;
+    margin: 0.5rem auto;
+    margin-top: 0%;
+    border-radius: 24px;
+    transition: box-shadow, 500ms;
+}
+
+div a:hover{
+    box-shadow: 6px 7px 10px rgb(20, 246, 246);
+}
+
+
+
+.hola{
+    color: black;
+}
+
+.wolverine{
+    width: 300px;
+    display: inline-block;
+}
+
+
+
+.imagen,.wolverine:hover{
+    cursor: pointer;
+}
+
+
+body aside ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem;  
+    margin: 15px;
+    border:1rem;  
+    text-decoration: none;   
+    transition: background-color 1000ms, ease 650ms;
+}
+
+body aside ul li:hover{
+    background-color: rgb(76, 225, 225);
+    color: rgb(239, 237, 237);
+}
+
+body{
+  
+}
+

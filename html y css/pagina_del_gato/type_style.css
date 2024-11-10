@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    padding: 20px;
+    text-align:center;
+    background-color: #333;
+    color: white;
+    
+}
+
+body{
+    background-color: #0b0909;
+}
+
+/*
+Usando el @media puedo hacer que se oriente uan cosa para cada cosa, o sea programar para diferentes sistemas operativos
+asi que al llegar a la casa voy a hacer una pagina que sea para movil, o sea responsiva
+
+*/
+
+
+
+@media(min-width: 729px){
+    body{
+        background-color: white;
+    }
+    header nav ul li a{
+    display: block;
+    padding: 0.75rem 1rem;    
+    text-decoration: none;
+    color: white;
+    transition: background-color 1000ms, ease 650ms;
+}
+}
+
+@media(min-width: 1025){
+    body{
+        background-color: pink;
+    }
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    margin-left: 1rem;
+}
+
+
+
+header nav ul li:hover{
+    background-color: rgb(83, 28, 98);
+    color: rgb(239, 237, 237);
+}
+
+h1{
+    display: block;
+    padding: 0.75rem 1rem; 
+    margin-right: 30rem;   
+    text-decoration: none;
+    text-align:left;
+    color: white;
+    transition: background-color 650ms, ease 650ms;
+}
+
+h1:hover{
+    background-color: rgb(91, 31, 107);
+    color: rgb(239, 237, 237);
+    cursor: pointer;
+}
+
+.logo{
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.hero_panel{
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hola_1{
+    width: 300px;
+    height:200px;
+}
+
+.contenedor1{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    padding: 1rem;
+    background-color: rgba(45, 44, 44, 0.5);
+    transition: box-shodow, 500ms;
+}
+.contenedor2{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    padding: 1rem;
+    background-color: rgba(45, 44, 44, 0.5);;
+    transition: box-shodow, 500ms;
+}
+.contenedor3{ 
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    padding: 1rem;
+    background-color: rgba(45, 44, 44, 0.5);
+    transition: box-shodow, 500ms;
+}
+
+.contenedor1:hover{
+    box-shadow: 6px 10px 20px rgb(43, 43, 43);
+}
+.contenedor2:hover{ 
+    box-shadow: 6px 10px 20px rgb(54, 56, 58);
+}
+.contenedor3:hover{  
+    box-shadow: 6px 10px 20px rgb(54, 56, 58);
+}
+
+a{
+    text-decoration: none;
+}
+
+.contenedor34{ 
+    display: block;
+    position: inherit;
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    background-color: rgba(45, 44, 44, 1);
+    transition: box-shodow, 500ms;
+}
+
+.contenedor34:hover{
+    cursor: pointer;
+    box-shadow: 6px 10px 20px rgb(163, 167, 167);
+}
+
+h2,h3{
+    color: white;
+
+}
+
+.plan1, .valor1,.plan2, .valor2, .plan3, .valor3{
+    margin:5px;
+    padding: 5px;
+}
+
+.lista{
+    color:white;
+    list-style: none;
+    margin:3px;
+
+}
+
+li{
+    margin:3px;
+    padding:3px;
+}
+li:hover{
+    cursor:pointer;
+}
+
+
+.valor1{
+    padding: 1rem;
+    margin: auto;
+    background-color: darkorange;
+    display: inline-block;
+    border-radius: 50px;
+    height: 60px;
+
+    justify-content: center;
+    
+}
+

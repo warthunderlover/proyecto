@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="utf-8">
+            <meta content="min-width=device-width, initial-scale=1" name="viewport">
+            <title>Préstamos Estudiantiles</title>
+        </head>
+
+        <body>
+            <h1>Préstamos</h1>
+            
+            <form action="formulario.html" method="get">
+
+                <p>Esta es una página para solicitar préstamos hacia los estudiantes, a continuación se le solicita lo siguiente.</p>
+
+                <p>Por favor ingrese la información solicitada en cada elemento: </p>
+                
+                <label for="nombre">Nombre:</label>    
+                <input style="margin-left: 68px;" id="nombre" name="nombre" type="text" placeholder="Nombre completo">
+                
+                <br><br>
+                
+                <label for="txtemail">Correo:</label>    
+                <input style="margin-left: 76px;" id="txtemail" name="txtemail" type="text" placeholder="Correo">
+            
+                <br><br>           
+
+                <label for="txtnum">Número telefonico:</label>
+                <input id="txtnum" name="txtnum" type="text" placeholder="Número">
+
+                <br><br>
+                
+                <label for="txtdire">Dirección actual</label>
+                <input style="margin-left: 20px;" id="txtdire" name="txtdire" type="text" placeholder="Dirección">
+
+                <br><br>
+
+                <label for="miComboBox">Estado Civíl</label>
+            
+                <select style="margin-left: 46px;" id="miComboBox" name="cmbest">
+                    <option value="SOL">Soltero</option>
+                    <option value="CAS">Casado</option>
+                    <option value="uni">Unión Libre</option>
+                    <option value="viu">Viudo/a</option>
+                </select>
+
+                <br><br>
+
+                <label for="txtcodi">Código postal:</label>
+                <input id="txtcodi" name="txtcodi" type="text" placeholder="Código">
+
+                <br><br><hr>
+              
+<!-------------------------------------------------------------------------------------------------------->
+
+
+                <label style="font-size: large; font-weight: bolder;">Nivel de educación</label>
+                
+                <br> <br>
+                <label for="optpre">Preparatoria</label>
+                <input style="margin-left: 15px;" type="radio" id="optpre" name="optniv" value="prep">
+                
+                <br>
+                
+                <label for="optLic">Licenciatura</label>
+                <input style="margin-left: 13px;" type="radio" id="optLic" name="optniv" value="lic">
+                
+                <br>
+                
+                <label for="optmaes">Maestría</label>
+                <input style="margin-left: 37px;" type="radio" id="optmaes" name="optniv" value="maes">
+                
+                <br>
+
+                <label for="optDoc">Doctorado</label>
+                <input style="margin-left: 25px;" type="radio" id="optDoc" name="optniv" value="doc">
+
+                <br> <br> <hr>
+ 
+<!------------------------------------------------------------------------------------------------------------------------------->
+
+                <label style="font-size: large; font-weight: bolder;">Programa de estudio</label>
+
+                <br>
+
+                <label for="optcdc">Ciencias de la Computación</label>
+                <input style="margin-left: 9px;" type="radio" id="optcdc" name="optprg" value="cdc">
+                
+                <br>
+                
+                <label for="opting">Ingeniería</label>
+                <input style="margin-left: 124px;" type="radio" id="opting" name="optprg" value="ing">
+                
+                <br>
+                
+                <label for="opteco">Economía</label>
+                <input style="margin-left: 124px;" type="radio" id="opteco" name="optprg" value="eco">
+                
+                <br>
+
+                <label for="optart">Artes</label>
+                <input style="margin-left: 153px;" type="radio" id="optart" name="optprg" value="art">
+
+                <br>
+
+                <label for="optotr">Otro</label>
+                <input style="margin-left: 159px;" type="radio" id="optotr" name="optprg" value="otro">
+
+                <br> <br> <hr>
+
+<!------------------------------------------------------------------------------------------------------------------------------->
+
+                <label style="font-size: large; font-weight: bold;">Monto y Razon de prestamo</label>
+                <br> <br>  <br>
+
+                <label for="txtmont">Ingrese el monto que desea</label>
+                <input type="text" id="txtmont" name="txtmont" placeholder="Monto">
+
+                <br> <br> <br>
+ 
+                <label for="txtlongtext">Razón por la que solicita el prestamo</label> <br> 
+                <textarea id="txtlongtext" name="txtbio"></textarea>
+
+                <br> <br>
+
+                <button type="submit" name="btnenviar">Submit</button>
+
+                <br> <br> <br> <br> <br>
+            </form>
+        </body>
+    </html>

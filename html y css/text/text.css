@@ -1,0 +1,40 @@
+.tit{
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 18px;
+    width: 200px;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+
+p{
+    font-family: roboto;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 100px;
+}
+
+.apple-text{
+    margin-bottom: 50px;
+    font-size: 13px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+.extilo{
+    color: white;
+    text-decoration: none;
+}
+
+.style{
+    transition: color 500ms, text-decoration 999ms;
+
+}
+
+.style:hover{
+    color: rgb(70, 70, 246);
+    text-decoration: underline;
+    cursor: pointer;
+}
